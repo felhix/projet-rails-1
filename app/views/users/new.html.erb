@@ -1,0 +1,13 @@
+<h1>Bienvenue dans la création d'utilisateurs</h1>
+
+<form action="<%= create_user_path %>" method="POST">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  Balance ton prénom<br>
+  <input type="text" name="username"><br><br>
+
+  Balance ta bio<br>
+  <textarea name="bio"></textarea><br><br>
+
+  <input type="submit" value="Envoyer le formulaire">
+</form>
